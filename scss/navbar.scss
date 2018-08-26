@@ -1,0 +1,41 @@
+// Navbar
+/* Add the below transitions to allow a smooth color change similar to lyft */
+.navbar {
+  padding: 0 !important;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  text-transform: uppercase;
+  font-size: $xs;
+  font-weight: 800;
+  .navbar-brand {
+    img {
+      height: 35px;
+      margin-left: 15px;
+    }
+  }
+  // custom Burger icon
+  .custom-toggler {
+    border-color: $blue !important;
+    margin-right: 15px;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,188,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    }
+  }
+  .nav-item {
+    padding: 0 !important;
+    .nav-link {
+      padding: 28px 35px;
+      color: $dark !important;
+      &:hover {
+        color: $blue !important;
+      }
+    }
+  }
+}
+// change nav background to white on Scroll
+.scrolled {
+  background: $white !important;
+}

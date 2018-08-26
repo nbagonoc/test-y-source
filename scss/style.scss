@@ -1,0 +1,175 @@
+// VARIABLES
+@import "variables";
+// CLASSES
+@import "classes";
+// MIXINS
+@import "mixins";
+// NAVBAR
+@import "navbar";
+
+body,
+html {
+  height: 100%;
+  color: $dark !important;
+  font-size: $sm;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 800 !important;
+    font-style: bold !important;
+  }
+}
+
+// Cover Background Slider
+.slider-cover {
+  height: 100%;
+  .curtain {
+    position: relative;
+    z-index: 9;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+// Outsourcing
+.outsourcing {
+  background: -moz-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/outsourcing.jpg") center center;
+  background: -webkit-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/outsourcing.jpg") center center;
+  background: -ms-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/outsourcing.jpg") center center;
+  background: -o-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/outsourcing.jpg") center center;
+  background: linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/outsourcing.jpg") center center;
+  @include background-settings;
+}
+
+.development {
+  background: -moz-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/development.jpg") center center;
+  background: -webkit-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/development.jpg") center center;
+  background: -ms-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/development.jpg") center center;
+  background: -o-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/development.jpg") center center;
+  background: linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/development.jpg") center center;
+  @include background-settings;
+}
+
+.consulting {
+  background: -moz-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/consulting.jpg") center center;
+  background: -webkit-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/consulting.jpg") center center;
+  background: -ms-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/consulting.jpg") center center;
+  background: -o-linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/consulting.jpg") center center;
+  background: linear-gradient(
+      to bottom,
+      rgba(44, 44, 44, 0.8) 0%,
+      rgba(44, 44, 44, 0.8) 100%
+    ),
+    url("../img/consulting.jpg") center center;
+  @include background-settings;
+}
+
+// Contact
+.contact {
+  input {
+    border: 1px solid $blue !important;
+  }
+  // Scroll to top
+  .scroll-to-top {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    a.scroller {
+      font-size: $lg;
+      color: $blue;
+      &:hover {
+        color: darken($blue, 10);
+      }
+    }
+  }
+}
+
+/* vertical align elements */
+.vetical-align {
+  position: relative;
+}
+.vertical-align-item {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERIES
+@import "media-queries";

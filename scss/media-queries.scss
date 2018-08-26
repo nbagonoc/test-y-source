@@ -1,0 +1,137 @@
+// extra small
+@media (max-width: 566px) {
+  .navbar {
+    @include navbar-mobile;
+  }
+  // Rearange actors
+  .outsourcing {
+    .actor {
+      right: -50px;
+    }
+  }
+  .development {
+    .actor {
+      left: 20px;
+    }
+  }
+  .consulting {
+    .actor {
+      right: 95px;
+    }
+  }
+  // creates a space between the marketing text and actor
+  .spacer {
+    margin-bottom: 375px;
+  }
+}
+// small
+@media (min-width: 567px) {
+  .navbar {
+    @include navbar-mobile;
+  }
+  // Rearange actors
+  .outsourcing {
+    .actor {
+      right: 0;
+    }
+  }
+  .development {
+    .actor {
+      left: 50px;
+    }
+  }
+  .consulting {
+    .actor {
+      right: 125px;
+    }
+  }
+  // creates a space between the marketing text and actor
+  .spacer {
+    margin-bottom: 375px;
+  }
+}
+// medium
+@media (min-width: 768px) {
+  .navbar {
+    background: initial;
+    .navbar-nav {
+      border-bottom: none;
+      .nav-item {
+        .nav-link {
+          border-top: none;
+          padding: 28px 10px !important;
+        }
+      }
+    }
+  }
+  // Rearange actors
+  .outsourcing {
+    .actor {
+      right: 75px;
+    }
+  }
+  .development {
+    .actor {
+      left: 130px;
+    }
+  }
+  .consulting {
+    .actor {
+      right: 210px;
+    }
+  }
+  // creates a space between the marketing text and actor
+  .spacer {
+    margin-bottom: 375px;
+  }
+}
+// large
+@media (min-width: 992px) {
+  .navbar {
+    @include navbar;
+  }
+  // Rearange actors
+  .outsourcing {
+    .actor {
+      right: 0;
+    }
+  }
+  .development {
+    .actor {
+      left: 15px;
+    }
+  }
+  .consulting {
+    .actor {
+      right: 100px;
+    }
+  }
+  .spacer {
+    margin-bottom: 0;
+  }
+}
+// extra large
+@media (min-width: 1200px) {
+  .navbar {
+    @include navbar;
+  }
+  // Rearange actors
+  .outsourcing {
+    .actor {
+      right: 0;
+    }
+  }
+  .development {
+    .actor {
+      left: 15px;
+    }
+  }
+  .consulting {
+    .actor {
+      right: 100px;
+    }
+  }
+  .spacer {
+    margin-bottom: 0;
+  }
+}
